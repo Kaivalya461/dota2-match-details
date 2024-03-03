@@ -1,5 +1,6 @@
 package com.kv.dota2matchdetails.model;
 
+import com.kv.hero.dto.HeroesDto;
 import lombok.Data;
 
 import java.time.ZonedDateTime;
@@ -12,4 +13,6 @@ public class PlayerMatchDetails {
     private int kills;
     private int deaths;
     private int assists;
+
+    private HeroesDto heroesDto;
 }
