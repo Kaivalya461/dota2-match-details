@@ -82,7 +82,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<mainClass>om.kv.dota2matchdetails.Dota2MatchDetailsApplication</mainClass>
+					<mainClass>com.kv.dota2matchdetails.Dota2MatchDetailsApplication</mainClass>
 				</configuration>
 				<executions>
 					<execution>
