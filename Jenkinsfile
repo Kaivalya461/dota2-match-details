@@ -17,7 +17,7 @@ def portainerDeployment(def stackName) {
         stackName,
         'https://github.com/Kaivalya461/kubernetes-yamls',
         'refs/heads/master',
-        'Device-Uptime-Monitoring/deploy.yaml'
+        'Dota2-Match-Details/deploy.yaml'
     );
 }
 
