@@ -44,6 +44,12 @@ pipeline {
 
                 // Get some code from a GitHub repository
                 // Run Maven on a Unix agent.
+                git 'https://github.com/Kaivalya461/dota2-model.git'
+                sh "mvn -Dmaven.test.failure.ignore=true clean install"
+
+                git 'https://github.com/Kaivalya461/dota2-steam-service-commons.git'
+                sh "mvn -Dmaven.test.failure.ignore=true clean install"
+
                 git "${GIT_HUB_REPO_NAME}";
                 sh "mvn -Dmaven.test.failure.ignore=true clean install"
 
