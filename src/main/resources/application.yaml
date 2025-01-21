@@ -1,0 +1,34 @@
+### Default Profile
+server:
+  port: 8080
+
+spring:
+  application:
+    name: dota2-match-details
+  cloud:
+    config:
+      fail-fast: true
+
+
+---
+### Local Profile
+spring:
+  config:
+    activate:
+      on-profile: local
+  cloud:
+    config:
+      enabled: false # Disable Spring Cloud for local profile
+
+eureka:
+  client:
+    enabled: false # Disable Eureka for local profile
+
+
+---
+### GKE Profile
+spring:
+  config:
+    activate:
+      on-profile: gke
+    import: "configserver:http://config-server.kvhome.in"
