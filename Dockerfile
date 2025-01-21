@@ -1,4 +1,4 @@
 FROM amazoncorretto:17-alpine
-COPY target/*.jar dota2-match-details-app.jar
+COPY target/dota2-match-details-*.jar dota2-match-details-app.jar
 
-ENTRYPOINT ["java","-Dspring.profiles.active=prod","-jar","/dota2-match-details-app.jar"]
+ENTRYPOINT ["java","-Dspring.profiles.active=gke,prod","-jar","/dota2-match-details-app.jar"]
